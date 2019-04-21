@@ -20,3 +20,12 @@ PATH 添加   %CMDER_HOME%
 win + x 再 a 以管理员身份打开cmd
 #执行
 Cmder.exe /REGISTER ALL
+
+
+将一下目录的文件进行修改：cmder\vendor\clink.lua文件中第41行中{lamb}修改为$
+
+修改前：local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg} \n\x1b[1;30;40m{lamb} \x1b[0m"
+
+修改后：local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg} \n\x1b[1;30;40m$ \x1b[0m"
+
+修改成功
